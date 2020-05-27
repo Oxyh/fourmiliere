@@ -3,8 +3,17 @@
 //
 
 #include <iostream>
+#include "environment.h"
+
+using namespace std;
 
 int main(int argc, char** arg) {
-    std::cout << "Hello world";
+    int tour=1;
+    Environment e(10,10);
+    cout << "Environement : " << e.getHeight() << "x" << e.getWidth() << endl;
+//    while (tour>0){
+//        cout << tour << endl;
+//        tour++;
+//    }
     return 0;
 }
