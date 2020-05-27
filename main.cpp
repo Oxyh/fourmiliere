@@ -9,7 +9,7 @@ using namespace std;
 
 int main(int argc, char** arg) {
     int tour=1;
-    Environment e(10,10);
+    Environment map(10,10);
     cout << "Environement : " << e.getHeight() << "x" << e.getWidth() << endl;
 //    while (tour>0){
 //        cout << tour << endl;

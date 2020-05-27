@@ -5,7 +5,6 @@
 #ifndef FOURMILIERE_ENVIRONMENT_H
 #define FOURMILIERE_ENVIRONMENT_H
 
-
 class Environment {
 private:
     int height;
@@ -25,6 +24,4 @@ public:
 
     virtual ~Environment();
 };
-
-
 #endif //FOURMILIERE_ENVIRONMENT_H
