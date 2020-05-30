@@ -6,7 +6,7 @@
 #define FOURMILIERE_NOURRITURE_H
 #include "sol.h"
 
-class nourriture: public Sol{
+class Nourriture: public Sol{
 
 };
 
