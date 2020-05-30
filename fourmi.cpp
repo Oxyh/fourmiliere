@@ -3,6 +3,7 @@
 //
 
 #include "fourmi.h"
+#include <iostream>
 
 using namespace std;
 
@@ -17,7 +18,7 @@ int Fourmi::GetMaturiy() {
 	return maturity;
 }
 
-int Fourmi::GetPosition() {
+int* Fourmi::GetPosition() {
 	return position;
 }
 
@@ -30,11 +31,9 @@ void Fourmi::SetPosition(int x, int y) {
 
 Fourmi::Fourmi()
 {
-	Fourmi f;
-	f.health = 100;
-	f.maturity = 0;
-	f.SetPosition(0, 0);
-	return f;
+	health = 100;
+	maturity = 0;
+	SetPosition(0, 0);
 }
 
 Fourmi::~Fourmi()

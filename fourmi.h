@@ -14,7 +14,7 @@ public:
 	int GetHealth();
 	void setHealth(int nourriture);
 	int GetMaturiy();
-	int GetPosition();
+	int* GetPosition();
 	void SetPosition(int x, int y);
 
 
@@ -22,7 +22,7 @@ private:
 
 	int health;
 	int maturity;
-	int[2] position;
+	int position[2];
 
 protected:
 
