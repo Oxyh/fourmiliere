@@ -4,9 +4,9 @@
 
 #ifndef FOURMILIERE_NOURRITURE_H
 #define FOURMILIERE_NOURRITURE_H
-#include sol.h
+#include "sol.h"
 
-class nourriture: public sol{
+class nourriture: public Sol{
 
 };
 
