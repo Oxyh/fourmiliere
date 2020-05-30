@@ -1,5 +1,7 @@
-//
-// Created by Joan on 30/05/2020.
-//
-
 #include "larve.h"
+
+using namespace std;
+
+void larve::seNourrir(int nourriture) {
+    this->setHealth(nourriture);
+}

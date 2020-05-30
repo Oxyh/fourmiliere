@@ -12,6 +12,7 @@ public:
 
 	virtual ~Fourmi();
 	int GetHealth();
+	void setHealth(int nourriture);
 	int GetMaturiy();
 	int GetPosition();
 	void SetPosition(int x, int y);

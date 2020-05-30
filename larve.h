@@ -1,14 +1,11 @@
-//
-// Created by Joan on 30/05/2020.
-//
-
 #ifndef FOURMILIERE_LARVE_H
 #define FOURMILIERE_LARVE_H
 
+#include "fourmi.h"
 
-class larve {
-
+class larve : public Fourmi {
+public:
+    void seNourrir(int nourriture);
 };
 
-
-#endif //FOURMILIERE_LARVE_H
+#endif //FOURMILIERE_LARVE_H#pragma once
