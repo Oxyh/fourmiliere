@@ -1,7 +1,3 @@
-//
-// Created by fabien on 27/05/2020.
-//
-
 #include "environment.h"
 
 Environment::Environment(int height, int width) {
@@ -13,9 +9,14 @@ Environment::Environment(int height, int width) {
     }
     this->height = height;
     this->width = width;
+    this->cases = new Sol*[this->height];
+    for (int i = 0; i < this->height; i++) {
+        this->cases[i] = new Sol[this->width];
+        for (int j = 0; j < this->width; ++j) {
+            this->cases[i][j] = Sol();
+        }
+    }
 }
-
-Environment::Environment() {}
 
 int Environment::getHeight() const {
     return height;
@@ -34,5 +35,8 @@ void Environment::setWidth(int width) {
 }
 
 Environment::~Environment() {
-
+    for (int i = 0; i < this->height; ++i) {
+        delete[] this->cases[i];
+    }
+    delete[] this->cases;
 }

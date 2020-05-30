@@ -1,18 +1,15 @@
-//
-// Created by fabien on 27/05/2020.
-//
-
 #ifndef FOURMILIERE_ENVIRONMENT_H
 #define FOURMILIERE_ENVIRONMENT_H
+
+#include "sol.h"
 
 class Environment {
 private:
     int height;
     int width;
+    Sol **cases;
 public:
-    Environment(int height, int width);
-
-    Environment();
+    Environment(int height=100, int width=50);
 
     int getHeight() const;
 
