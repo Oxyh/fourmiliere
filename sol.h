@@ -1,7 +1,7 @@
 #ifndef FOURMILIERE_SOL_H
 #define FOURMILIERE_SOL_H
 
-enum Sol{
+enum SolType{
     Vide, Nourriture, Obstacle
 };
 
@@ -9,8 +9,7 @@ class Sol {
 private:
     int x;
     int y;
-    int stocknour;
-    bool isobstacle;
+    SolType type;
 public:
     Sol(int x, int y);
 
