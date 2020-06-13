@@ -1,7 +1,9 @@
 #include <iostream>
-#include "environment.h"
+#include <cstdlib>
 #include <limits>
-
+#include <ctime>
+#include "environment.h"
+#include "Sol.h"
 using namespace std;
 
 int main(int argc, char** arg) {
@@ -30,9 +32,46 @@ int main(int argc, char** arg) {
 
     Environment map(height, width);
     cout << "Environement : " << map.getHeight() << "x" << map.getWidth() << endl;
-//    while (tour>0){
-//        cout << tour << endl;
-//        tour++;
-//    }
+
+    //Creation map ( case )
+    int x=1;
+    int y=1;
+    int nb_case=0;
+    int nb_case_obstacle=0;
+    srand((unsigned int)time(0));
+
+    while (x<=map.getHeight()){
+        int nombre_aleatoire = rand()%100 + 1;
+        if ( nombre_aleatoire >= 90 ) // c'est un obstacle
+        {
+            Sol (x,y);
+            nb_case_obstacle++;
+
+        }
+        else
+        {
+            Sol (x,y);
+            nb_case++;
+        }
+        if ( y == map.getWidth() )
+        {
+            x++;
+            y=0;
+        }
+        y++;
+    }
+    int nb_case_total = nb_case+nb_case_obstacle;
+    cout << "nombre de case obstacle : " << nb_case_obstacle << endl;
+    cout << "nombre de case : " << nb_case << endl;
+    cout << "nombre de case total : " << nb_case_total << endl;
+
+    while (tour<5){
+        tour++;
+
+
+
+    }
+
+
     return 0;
 }
