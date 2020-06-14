@@ -44,13 +44,12 @@ int main(int argc, char** arg) {
         int nombre_aleatoire = rand()%100 + 1;
         if ( nombre_aleatoire >= 90 ) // c'est un obstacle
         {
-            Sol (x,y);
+            Sol (x,y,Obstacle);
             nb_case_obstacle++;
-
         }
         else
         {
-            Sol (x,y);
+            Sol (x,y,Vide);
             nb_case++;
         }
         if ( y == map.getWidth() )
