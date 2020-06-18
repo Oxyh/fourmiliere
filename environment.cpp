@@ -1,7 +1,7 @@
 #include "environment.h"
 #include <iostream>
 
-Environment::Environment(int height, int width, int nb_wall, int nb_food) : nb_wall(nb_wall), nb_food(nb_food){
+Environment::Environment(int height, int width, int nb_wall, int nb_food, int nb_fourmiliere) : nb_wall(nb_wall), nb_food(nb_food), nb_fourmiliere(nb_fourmiliere){
     if (height<10){
         height=10;
     }
@@ -18,13 +18,24 @@ Environment::Environment(int height, int width, int nb_wall, int nb_food) : nb_w
             this->cases[i][j] = Sol(i, j, SolType::Vide);
         }
     }
+    this->generer_fourmiliere();
     this->generer_cases(SolType::Nourriture);
     this->generer_cases(SolType::Obstacle);
 }
 
+void Environment::generer_fourmiliere() {
+    int a = this->height/2;
+    int b = this->width/2;
+    this->cases[a][b].setType(SolType::Fourmiliere);
+    }
+
+
 void Environment::generer_cases(SolType type) {
     int compteur;
     switch (type) {
+        case SolType::Fourmiliere:
+            compteur= this->nb_fourmiliere;
+            break;
         case SolType::Nourriture:
             compteur = this->nb_food;
             break;

@@ -35,6 +35,9 @@ void Sol::affiche()  {
         case SolType::Obstacle:
             std::cout << "O";
             break;
+        case SolType::Fourmiliere:
+            std::cout << "F";
+            break;
         default:
             std::cout << "-";
     }

@@ -2,7 +2,7 @@
 #define FOURMILIERE_SOL_H
 
 enum SolType{
-    Vide, Nourriture, Obstacle
+    Vide, Nourriture, Obstacle, Fourmiliere
 };
 
 class Sol {
