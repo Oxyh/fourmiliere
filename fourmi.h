@@ -1,6 +1,9 @@
 #ifndef FOURMILIERE_FOURMI_H
 #define FOURMILIERE_FOURMI_H
 
+enum FourmiType{
+    Ouvriere, Guerriere
+};
 
 class Fourmi {
 
@@ -12,13 +15,14 @@ public:
 	int GetMaturiy();
 	int* GetPosition();
 	void SetPosition(int x, int y);
-
+    void afficheFourmi(FourmiType);
 
 private:
 
 	int health;
 	int maturity;
 	int position[2];
+    FourmiType type;
 
 protected:
 

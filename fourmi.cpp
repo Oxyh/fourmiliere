@@ -25,6 +25,16 @@ void Fourmi::SetPosition(int x, int y) {
 	this->position[1] = y;
 }
 
+void Fourmi::afficheFourmi(FourmiType type)  {
+    switch (this->type) {
+    case FourmiType::Ouvriere:
+        std::cout << "N";
+    break;
+    case FourmiType::Guerriere:
+        std::cout << "O";
+    }
+}
+
 Fourmi::Fourmi()
 {
 	health = 100;
