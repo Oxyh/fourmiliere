@@ -1,7 +1,3 @@
-//
-// Created by Mathieu on 30/05/2020.
-//
-
 #ifndef FOURMILIERE_FOURMI_H
 #define FOURMILIERE_FOURMI_H
 

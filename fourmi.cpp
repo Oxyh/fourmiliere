@@ -1,7 +1,3 @@
-//
-// Created by Mathieu on 27/05/2020.
-//
-
 #include "fourmi.h"
 #include <iostream>
 
