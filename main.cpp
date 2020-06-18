@@ -1,7 +1,9 @@
 #include <iostream>
-#include "environment.h"
+#include <cstdlib>
 #include <limits>
-
+#include <ctime>
+#include "environment.h"
+#include "Sol.h"
 using namespace std;
 
 int input_positive_integer(string message){
