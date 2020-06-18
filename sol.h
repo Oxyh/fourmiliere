@@ -11,17 +11,21 @@ private:
     int y;
     SolType type;
 public:
-    Sol(int x, int y);
+    Sol(int x, int y, SolType type);
 
     Sol();
 
-    int getx() const;
+    int getX() const;
 
-    void setx(int x);
+    void setX(int x);
 
-    int gety() const;
+    int getY() const;
 
-    void sety(int y);
+    void setY(int y);
+
+    SolType getType() const;
+
+    void setType(SolType type);
 
     void affiche();
 

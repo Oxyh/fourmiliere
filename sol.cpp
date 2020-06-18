@@ -1,33 +1,52 @@
-//
-// Created by fabien on 27/05/2020.
-//
 #include <iostream>
 #include "sol.h"
-Sol::Sol(int x, int y) {
+
+Sol::Sol(int x, int y, SolType type) {
     this->x = x;
     this->y = y;
+    this->type = type;
 }
 
 Sol::Sol() {}
 
-int Sol::getx() const {
+int Sol::getX() const {
     return x;
 }
 
-void Sol::setx(int x) {
+void Sol::setX(int x) {
     this->x  = x;
 }
 
-int Sol::gety() const {
+int Sol::getY() const {
     return y;
 }
 
-void Sol::sety(int y) {
+void Sol::setY(int y) {
     this->y = y;
 }
 void Sol::affiche()  {
-    std::cout << "x:" <<  x << " y:" << y << "\n" << std::endl;
+    switch (this->type) {
+        case SolType::Nourriture:
+            std::cout << "N";
+            break;
+        case SolType::Obstacle:
+            std::cout << "O";
+            break;
+        default:
+            std::cout << "-";
+    }
 }
+
+SolType Sol::getType() const {
+    return type;
+}
+
+void Sol::setType(SolType type) {
+    Sol::type = type;
+}
+
 Sol::~Sol() {
 
 }
+
+
