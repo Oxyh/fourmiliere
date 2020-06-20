@@ -1,5 +1,9 @@
 #include "environment.h"
 #include <iostream>
+#include <random>
+
+
+
 
 Environment::Environment(int height, int width, int nb_wall, int nb_food, int nb_fourmiliere) : nb_wall(nb_wall), nb_food(nb_food), nb_fourmiliere(nb_fourmiliere){
     if (height<10){
@@ -19,9 +23,19 @@ Environment::Environment(int height, int width, int nb_wall, int nb_food, int nb
         }
     }
     this->generer_fourmiliere();
+//    this->generer_fourmi(FourmiType::Guerriere);
+//    this->generer_fourmi(FourmiType::Ouvriere);
     this->generer_cases(SolType::Nourriture);
     this->generer_cases(SolType::Obstacle);
 }
+
+//void Environment::generer_fourmi(FourmiType type) {
+//    int a = this->height/3;
+//    int b = this->width/3;
+//    this->emplacement[a][b].setTypeFourmi(FourmiType::Guerriere);
+//}
+
+
 
 void Environment::generer_fourmiliere() {
     int a = this->height/2;
@@ -32,6 +46,10 @@ void Environment::generer_fourmiliere() {
 
 void Environment::generer_cases(SolType type) {
     int compteur;
+    std::random_device device; //nouvelle fonction random pour générer la map
+    std::mt19937 generator(device()); //nouvelle fonction random pour générer la map
+    std::uniform_int_distribution<int> distribution_i(0,this->height-1); //nouvelle fonction random pour générer la map
+    std::uniform_int_distribution<int> distribution_j(0,this->width-1); //nouvelle fonction random pour générer la map
     switch (type) {
         case SolType::Fourmiliere:
             compteur= this->nb_fourmiliere;
@@ -46,8 +64,10 @@ void Environment::generer_cases(SolType type) {
             compteur = 0;
     }
     while (compteur > 0){
-        int a = rand() % this->height;
-        int b = rand() % this->width;
+//        int a = rand() % this->height;
+//        int b = rand() % this->width;
+        int a =distribution_i(generator); //nouvelle fonction random pour générer la map
+        int b = distribution_j(generator); //nouvelle fonction random pour générer la map
         while (this->cases[a][b].getType()!=SolType::Vide){
             a = rand() % this->height;
             b = rand() % this->width;

@@ -7,22 +7,28 @@ enum FourmiType{
 
 class Fourmi {
 
+private:
+
+    int health;
+    int maturity;
+    int position[2];
+    FourmiType type;
+
 public:
 
 	virtual ~Fourmi();
 	int GetHealth();
 	void setHealth(int nourriture);
+//	FourmiType getType() const;
+//	void setTypeFourmi(FourmiType type);
 	int GetMaturiy();
 	int* GetPosition();
 	void SetPosition(int x, int y);
-    void afficheFourmi(FourmiType);
+//    void afficheFourmi(FourmiType);
+//    Fourmi(int health, int maturity, int position[2], FourmiType type);
 
-private:
 
-	int health;
-	int maturity;
-	int position[2];
-    FourmiType type;
+
 
 protected:
 

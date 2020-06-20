@@ -2,6 +2,7 @@
 #define FOURMILIERE_ENVIRONMENT_H
 
 #include "sol.h"
+//#include "fourmi.h"
 
 class Environment {
 private:
@@ -11,6 +12,7 @@ private:
     int nb_food;
     int nb_fourmiliere;
     Sol **cases;
+//    Fourmi **emplacement;
     void generer_cases(SolType type);
 
 
@@ -30,6 +32,9 @@ public:
     virtual ~Environment();
 
     void generer_fourmiliere();
+//    void generer_fourmi(FourmiType type);
+
+
 
 };
 

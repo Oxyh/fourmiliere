@@ -18,28 +18,33 @@ int* Fourmi::GetPosition() {
 	return position;
 }
 
-
+//FourmiType Fourmi::getType() const {
+//    return type;
+//}
+//void Fourmi::setTypeFourmi(FourmiType type) {
+//    Fourmi::type = type;
+//}
 
 void Fourmi::SetPosition(int x, int y) {
 	this->position[0] = x;
 	this->position[1] = y;
 }
 
-void Fourmi::afficheFourmi(FourmiType type)  {
-    switch (this->type) {
-    case FourmiType::Ouvriere:
-        std::cout << "N";
-    break;
-    case FourmiType::Guerriere:
-        std::cout << "O";
-    }
-}
+//void Fourmi::afficheFourmi(FourmiType type)  {
+//    switch (this->type) {
+//    case FourmiType::Ouvriere:
+//        std::cout << "N";
+//    break;
+//    case FourmiType::Guerriere:
+//        std::cout << "O";
+//    }
+//}
 
 Fourmi::Fourmi()
 {
 	health = 100;
 	maturity = 0;
-	SetPosition(0, 0);
+	SetPosition(0,0 );
 }
 
 Fourmi::~Fourmi()
