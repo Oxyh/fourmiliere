@@ -7,9 +7,10 @@
 
 #include "fourmi.h"
 
-class Guerriere : Fourmi{
+class Guerriere : public Fourmi{
 public:
     void fight();
+    Guerriere(int health, int maturity, int positionX, int positionY);
 
 };
 

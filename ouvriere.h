@@ -3,9 +3,10 @@
 
 #include "fourmi.h"
 
-class Ouvriere: Fourmi {
+class Ouvriere: public Fourmi {
 public:
     void FeedLarvae(); //ajoute de la vi à la larve nourrie par l'ouvriere
+    Ouvriere(int health, int maturity, int positionX, int positionY);
 };
 
 

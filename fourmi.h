@@ -6,7 +6,7 @@
 
 
 
-class Fourmi : Larve {
+class Fourmi : public Larve {
 
 public:
 	virtual ~Fourmi();

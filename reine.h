@@ -3,9 +3,13 @@
 
 #include "fourmi.h"
 
-class Reine : Fourmi {
+class Reine : public Fourmi {
+
+
 public:
     void LayLarvae();
+    Reine(int health, int maturity, int positionX, int positionY);
+
 };
 
 

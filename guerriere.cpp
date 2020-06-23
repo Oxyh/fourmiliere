@@ -9,3 +9,7 @@ using namespace std;
 void Guerriere::fight() {
     //enelve de la vie à chaque tours aux deux fourmis qui se battent
 }
+
+Guerriere::Guerriere(int health, int maturity, int positionX, int positionY) {
+
+}
