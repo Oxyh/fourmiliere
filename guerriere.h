@@ -5,8 +5,11 @@
 #ifndef FOURMILIERE_GUERRIERE_H
 #define FOURMILIERE_GUERRIERE_H
 
+#include "fourmi.h"
 
-class guerriere {
+class Guerriere : Fourmi{
+public:
+    void fight();
 
 };
 

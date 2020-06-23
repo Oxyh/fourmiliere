@@ -1,9 +1,11 @@
 #ifndef FOURMILIERE_REINE_H
 #define FOURMILIERE_REINE_H
 
+#include "fourmi.h"
 
-class reine {
-
+class Reine : Fourmi {
+public:
+    void LayLarvae();
 };
 
 

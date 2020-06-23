@@ -3,20 +3,7 @@
 
 using namespace std;
 
-int Fourmi::GetHealth() {
-	return health;
-}
-void Fourmi::setHealth(int nourriture) {
-    health = health + nourriture;
-}
 
-int Fourmi::GetMaturiy() {
-	return maturity;
-}
-
-int* Fourmi::GetPosition() {
-	return position;
-}
 
 //FourmiType Fourmi::getType() const {
 //    return type;
@@ -25,10 +12,7 @@ int* Fourmi::GetPosition() {
 //    Fourmi::type = type;
 //}
 
-void Fourmi::SetPosition(int x, int y) {
-	this->position[0] = x;
-	this->position[1] = y;
-}
+
 
 //void Fourmi::afficheFourmi(FourmiType type)  {
 //    switch (this->type) {
@@ -40,12 +24,7 @@ void Fourmi::SetPosition(int x, int y) {
 //    }
 //}
 
-Fourmi::Fourmi()
-{
-	health = 100;
-	maturity = 0;
-	SetPosition(0,0 );
-}
+
 
 Fourmi::~Fourmi()
 {
