@@ -7,6 +7,6 @@ void Reine::LayLarvae(){
    // Larve();
 }
 
-Reine::Reine(int health, int maturity, int positionX, int positionY) {
-
+Reine::Reine(int health, int maturity, int positionX, int positionY) : Fourmi(health,maturity,positionX,positionY){
+    this->VraieReine=true;
 }

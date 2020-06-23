@@ -10,6 +10,6 @@ void Guerriere::fight() {
     //enelve de la vie à chaque tours aux deux fourmis qui se battent
 }
 
-Guerriere::Guerriere(int health, int maturity, int positionX, int positionY) {
+Guerriere::Guerriere(int health, int maturity, int positionX, int positionY) : Fourmi(health,maturity,positionX,positionY){
 
 }

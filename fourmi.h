@@ -15,10 +15,10 @@ public:
 //    void afficheFourmi(FourmiType);
 //    Fourmi(int health, int maturity, int position[2], FourmiType type);
     void GatherFood();
+    Fourmi(int health, int maturity, int positionX, int positionY);
+
 protected:
-
-	Fourmi();
-
+//    Fourmi();
 };
 
 

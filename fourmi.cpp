@@ -24,11 +24,15 @@ using namespace std;
 //    }
 //}
 
+Fourmi::Fourmi(int health, int maturity, int positionX, int positionY) : Larve(health,maturity,positionX,positionY){
 
+}
+
+//Fourmi::Fourmi() {}
 
 Fourmi::~Fourmi()
 {
-	cout << "A fourmi died ... in position " << this->GetPosition() << " and his maturity was " << this->GetMaturiy();
+//	cout << "A fourmi died ... in position " << this->GetPosition() << " and his maturity was " << this->GetMaturiy();
 }
 
 

@@ -7,6 +7,7 @@ class Reine : public Fourmi {
 
 
 public:
+    bool VraieReine;
     void LayLarvae();
     Reine(int health, int maturity, int positionX, int positionY);
 

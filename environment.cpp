@@ -41,12 +41,12 @@ void Environment::generer_fourmiliere() {
     int a = this->height/2;
     int b = this->width/2;
     this->cases[a][b].setType(SolType::Fourmiliere);
-    this->tableauFourmi.push_back(new Reine(100,100,50,50));
+    this->tableauFourmi.push_back(new Reine(200,100,50,50));
     this->tableauFourmi.push_back(new Ouvriere(100,100,50,50));
     this->tableauFourmi.push_back(new Ouvriere(100,100,50,50));
-    this->tableauFourmi.push_back(new Guerriere(100,100,50,50));
-    this->tableauFourmi.push_back(new Guerriere(100,100,50,50));
-    this->tableauFourmi.push_back(new Larve(100,100,50,50));
+    this->tableauFourmi.push_back(new Guerriere(150,100,50,50));
+    this->tableauFourmi.push_back(new Guerriere(150,100,50,50));
+    this->tableauFourmi.push_back(new Larve(50,100,50,50));
     }
 
 
@@ -113,8 +113,4 @@ Environment::~Environment() {
         delete[] this->cases[i];
     }
     delete[] this->cases;
-}
-
-Environment::Reine(){
-
 }

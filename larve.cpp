@@ -23,10 +23,10 @@ void Larve::SetPosition(int x, int y) {
 }
 
 Larve::Larve(int health, int maturity, int positionX, int positionY) {
-    this->health;
-    this->maturity;
-    this->positionX;
-    this->positionY;
+    this->health=health;
+    this->maturity=maturity;
+    this->positionX=positionX;
+    this->positionY=positionY;
 }
 
 Larve::Larve()

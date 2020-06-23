@@ -7,6 +7,6 @@ void Ouvriere::FeedLarvae() {
 
 }
 
-Ouvriere::Ouvriere(int health, int maturity, int positionX, int positionY) {
+Ouvriere::Ouvriere(int health, int maturity, int positionX, int positionY) : Fourmi(health,maturity,positionX,positionY) {
 
 }
