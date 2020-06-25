@@ -21,6 +21,7 @@ void Guerriere::BougerFourmi() {
 //    std::random_device alea; //nouvelle fonction random pour générer la map
 //    std::mt19937 generator(alea()); //nouvelle fonction random pour générer la map
 //    std::uniform_int_distribution<int> distribution(1,4); //nouvelle fonction random pour générer la map
+    //commentaire inutile
     int alea;
     alea=rand()%4;
 
