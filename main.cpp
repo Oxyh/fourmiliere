@@ -37,7 +37,6 @@ int main(int argc, char** arg) {
         vector<Larve*> tableauFourmi= map.GetTableauFourmi();
         for (int tabF=0; tabF<tableauFourmi.size(); tabF++){
             tableauFourmi[tabF]->BougerFourmi();
-            cout<< " La fourmi a bougé en x:" <<tableauFourmi[tabF]->positionX<< " y: "<< tableauFourmi[tabF]->positionY<< endl;
         }
         tour++;
     }

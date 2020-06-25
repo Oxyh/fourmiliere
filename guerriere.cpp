@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include <random>
 #include "guerriere.h"
 
 using namespace std;
@@ -16,8 +17,31 @@ Guerriere::Guerriere(int health, int maturity, int positionX, int positionY) : F
 }
 
 void Guerriere::BougerFourmi() {
+    cout<< " La fourmi est en position initiale x:" <<positionX<< " y: "<< positionY<< endl;
+//    std::random_device alea; //nouvelle fonction random pour générer la map
+//    std::mt19937 generator(alea()); //nouvelle fonction random pour générer la map
+//    std::uniform_int_distribution<int> distribution(1,4); //nouvelle fonction random pour générer la map
+    int alea;
+    alea=rand()%4;
 
-    cout<< " La fourmi est en position x:" <<positionX<< " y: "<< positionY<< endl;
-    std::cout << "Bouge petite fourmi" << std::endl;
+    if (alea==0) {
+        positionX+=1;
+        cout<< " La fourmi a bouge de +1 x x:" <<positionX<< " y: "<< positionY<< endl;
+    }
+    if (alea==1){
+        positionX-=1;
+        cout<< " La fourmi a bouge de -1 x x:" <<positionX<< " y: "<< positionY<< endl;
+    }
+    if (alea==2) {
+        positionY+=1;
+        cout<< " La fourmi a bouge de +1 y x:" <<positionX<< " y: "<< positionY<< endl;
+    }
+    if (alea==3){
+        positionY-=1;
+        cout<< " La fourmi a bouge de -1 y x:" <<positionX<< " y: "<< positionY<< endl;
+    }
+//    cout<< " alea :" <<alea << endl;
+
+
 
 }
