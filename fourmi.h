@@ -14,8 +14,9 @@ public:
 //	void setTypeFourmi(FourmiType type);
 //    void afficheFourmi(FourmiType);
 //    Fourmi(int health, int maturity, int position[2], FourmiType type);
-    void GatherFood();
+//    void GatherFood();
     Fourmi(int health, int maturity, int positionX, int positionY);
+    void GetPositionFourmi();
 
 protected:
 //    Fourmi();

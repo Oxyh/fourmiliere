@@ -1,5 +1,4 @@
 #include "fourmi.h"
-#include <iostream>
 
 using namespace std;
 
@@ -13,14 +12,20 @@ using namespace std;
 //}
 
 
+//void Fourmi::GetPositionFourmi() {
+//    this->GetX();
+//    this->GetY();
+//}
+
+
 
 //void Fourmi::afficheFourmi(FourmiType type)  {
 //    switch (this->type) {
 //    case FourmiType::Ouvriere:
-//        std::cout << "N";
+//        std::cout << "O";
 //    break;
 //    case FourmiType::Guerriere:
-//        std::cout << "O";
+//        std::cout << "G";
 //    }
 //}
 

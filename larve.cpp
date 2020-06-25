@@ -43,3 +43,8 @@ int Larve::getPositionX() const {
 int Larve::getPositionY() const {
     return positionY;
 }
+
+void Larve::BougerFourmi() {
+
+}
+

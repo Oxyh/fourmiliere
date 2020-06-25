@@ -42,6 +42,7 @@ public:
 
     virtual ~Environment();
     void generer_fourmiliere();
+    std::vector<Larve*>& GetTableauFourmi();
 
 
 

@@ -3,7 +3,8 @@
 #include <limits>
 #include <ctime>
 #include "environment.h"
-#include "Sol.h"
+#include "sol.h"
+#include "fourmi.h"
 using namespace std;
 
 int input_positive_integer(string message){
@@ -31,9 +32,14 @@ int main(int argc, char** arg) {
 
     Environment map(height, width, nb_wall, nb_food);
     map.display_map();
-//    while (tour>0){
-//        cout << tour << endl;
-//        tour++;
-//    }
+    while (tour<5){
+        cout << "Le tour actuel est: "<< tour << endl;
+        vector<Larve*> tableauFourmi= map.GetTableauFourmi();
+        for (int tabF=0; tabF<tableauFourmi.size(); tabF++){
+            tableauFourmi[tabF]->BougerFourmi();
+            cout<< " La fourmi a bougé en x:" <<tableauFourmi[tabF]->positionX<< " y: "<< tableauFourmi[tabF]->positionY<< endl;
+        }
+        tour++;
+    }
     return 0;
 }

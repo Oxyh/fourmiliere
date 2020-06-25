@@ -11,6 +11,7 @@ class Guerriere : public Fourmi{
 public:
     void fight();
     Guerriere(int health, int maturity, int positionX, int positionY);
+    virtual void BougerFourmi();
 
 };
 

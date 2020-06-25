@@ -7,8 +7,6 @@ class Larve {
 private:
     int health;
     int maturity;
-    int positionX;
-    int positionY;
 public:
     int GetHealth();
     void setHealth(int nourriture);
@@ -18,9 +16,14 @@ public:
     int getPositionY() const;
     void SetPosition(int x, int y);
     Larve(int health, int maturity, int positionX, int positionY);
+    virtual void BougerFourmi();
+    int positionX;
+    int positionY;
+
 
 protected:
     Larve();
+
 };
 
 
