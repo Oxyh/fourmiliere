@@ -3,22 +3,6 @@
 using namespace std;
 
 
-
-//FourmiType Fourmi::getType() const {
-//    return type;
-//}
-//void Fourmi::setTypeFourmi(FourmiType type) {
-//    Fourmi::type = type;
-//}
-
-
-//void Fourmi::GetPositionFourmi() {
-//    this->GetX();
-//    this->GetY();
-//}
-
-
-
 //void Fourmi::afficheFourmi(FourmiType type)  {
 //    switch (this->type) {
 //    case FourmiType::Ouvriere:

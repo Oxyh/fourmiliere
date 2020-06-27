@@ -18,10 +18,10 @@ Guerriere::Guerriere(int health, int maturity, int positionX, int positionY) : F
 
 void Guerriere::BougerFourmi() {
     cout<< " La fourmi est en position initiale x:" <<positionX<< " y: "<< positionY<< endl;
-//    std::random_device alea; //nouvelle fonction random pour générer la map
-//    std::mt19937 generator(alea()); //nouvelle fonction random pour générer la map
-//    std::uniform_int_distribution<int> distribution(1,4); //nouvelle fonction random pour générer la map
-    //commentaire inutile
+//    std::random_device alea;
+//    std::mt19937 generator(alea());
+//    std::uniform_int_distribution<int> distribution(1,4);
+//    cout<< distribution(generator)<<endl;
     int alea;
     alea=rand()%4;
 

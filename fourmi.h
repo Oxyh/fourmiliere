@@ -10,7 +10,7 @@ class Fourmi : public Larve {
 
 public:
 	virtual ~Fourmi();
-//	FourmiType getType() const;
+
 //	void setTypeFourmi(FourmiType type);
 //    void afficheFourmi(FourmiType);
 //    Fourmi(int health, int maturity, int position[2], FourmiType type);
