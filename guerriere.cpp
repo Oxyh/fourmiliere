@@ -1,7 +1,3 @@
-//
-// Created by Adrien on 18/06/2020.
-//
-
 #include <iostream>
 #include <random>
 #include "guerriere.h"
